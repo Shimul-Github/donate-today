@@ -1,0 +1,266 @@
+*{
+    margin:0;
+    padding:0;
+}
+/*Start Banner Section*/
+header{
+    background-color: #f6f620;
+    margin:20px auto;
+    background-repeat:no-repeat;
+    
+}
+header img{
+    width:100%;
+}
+.banner{
+    color: white;
+    position:relative;
+    align-items: center;
+    justify-content: center;     
+}
+.banner-title{
+        padding:50px 140px 10px;
+        text-align: center;
+        font-size: 50px;    
+}
+.banner-description{
+    padding:10px 140px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.dn-btn{
+    background-color: #c12506;
+    font-size: 80px;
+    
+}
+/*End Banner Section*/
+/*Start Donate Today Section*/
+.donate-today{
+    margin:20px auto;
+}
+.dn-btn{
+    margin:5px 340px;
+    padding:5px 10px;
+    color: white;
+}
+.donate-tk h2{
+    padding:10px 140px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 40px;
+}
+.donate-tk p{
+    padding:10px 140px;
+    text-align: center;
+    font-size: 15px;
+}
+.donate-today ul{
+    list-style:none;
+    margin:10px 1000px; 
+    background-color: #f6f620;  
+}
+.donate-today ul li{
+    display:inline;
+    margin:80px
+    
+   
+}
+/*End Donate Today Section*/
+/*Start plan section*/
+.plan{
+    margin:20px auto;
+}
+.plan-title-description{
+    text-align: center;
+    width: auto;
+}
+
+.plan h2{
+    text-align: center;
+}
+.plans-container{
+    display: flex;  
+    margin:10px 1000px; 
+    background-color: #14ed8f;
+    gap:10px;  
+}
+
+.plan-options1{
+    background-color: aqua;
+    width: 356.67px;
+    height: 230px;
+}
+.plan-options2{
+    background-color: #e39149;
+    width: 356.67px;
+    height: 230px;
+}
+.plan-options3{
+    background-color: #f6f620;
+    width: 356.67px;
+    height: 230px;
+}
+.plan-options1 img{
+    padding:20px 5px;
+}
+.plan-options2 img{
+    padding:20px 5px;
+}
+.plan-options3 img{
+    padding:20px 5px;
+}
+.plan-options1 .plan-title{
+    padding:10px 5px;
+}
+.plan-options2 .plan-title{
+    padding:10px 5px;
+}
+.plan-options3 .plan-title{
+    padding:10px 5px;
+}
+
+.plan-options1 .plan-description{
+    padding-left:5px;
+    padding-bottom:15px;
+    font-size: small;
+
+}
+.plan-options2 .plan-description{
+    padding-left:5px;
+    padding-bottom:15px;
+    font-size: small;
+}
+.plan-options3 .plan-description{
+    padding-left:5px;
+    padding-bottom:15px;
+    font-size: small;
+}
+/*End plan section*/
+/*Start lives section*/
+.lives{
+    margin:20px auto;
+}
+.lives-container{
+    background-color: #e39149;
+    display: flex;
+    gap:10px;
+    margin:10px 1000px;
+    align-items: center;
+}
+.lives-text{
+    margin:30px 10px;
+    background-color: #19e590;
+}
+.lives-text h2{
+    font-size: 35px;
+    margin:10px 0;
+}
+.lives-text p{
+    font-size: 15px;
+    margin:10px 0;
+}
+.cont-btn{
+    margin:5px 0;
+    padding:10px 10px;
+    color: white;
+    background-color: #c12506;
+    font-size: 30px;
+}
+.lives-pic img{
+    width: 100%;
+}
+
+.lives1{
+    margin:20px auto;
+}
+.lives-container1{
+    background-color: #e39149;
+    display: flex;
+    gap:10px;
+    margin:10px 1000px;
+    align-items: center;
+}
+.lives-pic1 img{
+    width: 100%;
+}
+.lives-text1{
+    margin:30px 10px;
+    background-color: #19e590;
+    width: 70%;
+}
+.lives-text1 h2{
+    font-size: 35px;
+    margin:10px 0;
+}
+.lives-text1 p{
+    font-size: 15px;
+    margin:10px 0;
+}
+.cont-btn1{
+    margin:5px 0;
+    padding:10px 10px;
+    color: white;
+    background-color: #c12506;
+    font-size: 30px;
+}
+/*End lives section*/
+/*Start updates section*/
+.updates{
+    background-color: #e39149;
+   
+    
+}
+.updates p{
+    margin: 10px 990px;
+    background-color: aliceblue;
+    height: 70px;
+    font-size: 30px;
+    text-align: center;
+}
+.updates h1{
+    margin: 10px 990px;
+    background-color: #cedeec;
+    height: 70px;
+    font-size: 60px;
+    text-align: center;
+}
+.subscribe{
+    margin: 10px 990px;
+    background-color: #edebe9;
+    align-items: center;
+
+}
+.subscribe ul{
+    margin: 5px 485px;
+    background-color: #cedeec;
+    height: 180px;
+    text-align: center;
+    list-style: none;
+    padding-top:160px
+    
+}
+.subscribe ul li{
+    display: inline;
+    font-size: 20px;  
+}
+
+/*End updates section*/
+/*Start footer */
+footer{
+    background-color: black;
+}
+footer h2{
+    font-size: 140px;
+    color: #c12506;
+    text-align: center;
+}
+footer p{
+    font-size: 40px;
+    color: #f06b50;
+    text-align: center;
+}
+
+
+
+/*End footer */
