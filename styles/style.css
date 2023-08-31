@@ -4,21 +4,34 @@
 }
 /*Start Banner Section*/
 header{
-    background-color: #f6f620;
+    
     margin:20px auto;
     background-repeat:no-repeat;
-    
+    width:100%;
+    height: 1322.83px;    
 }
 header img{
     width:100%;
-}
+    height: 1322.83px;
+    opacity: .50; /*blur effect ki thik ache*/
+} 
 .banner{
     color: white;
-    position:relative;
-    align-items: center;
-    justify-content: center;     
+    position:relative; /*parent div position absolute dile child div or er under e je tags golo thake tar upor ki effect pore?*/   
 }
-.banner-title{
+.banner-text{
+    position: absolute;/*position absolute er effect ta ki? parent div e position relative die child div e position absoulte dile child div parent div er majkhane show kore*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);/*transform er kaj ta ki? Eta child div e apply korle parent div er majkhane position hoy, na dile parent div er right er bottom e show kore*/
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    font-size: 48px;
+    text-align:center;
+}
+/* .banner-title{
         padding:50px 140px 10px;
         text-align: center;
         font-size: 50px;    
@@ -27,78 +40,115 @@ header img{
     padding:10px 140px;
     text-align: center;
     font-size: 20px;
-}
+} */
 
 .dn-btn{
     background-color: #c12506;
-    font-size: 80px;
-    
+    font-size: 30px;
+    position: relative;/*position absolute na die relative dile text er sathe lage jai.padding or margin dile O kaj hoyna*/
+    top: 135%;
+    left: 30%;
+    transform: translate(-135%, -30%);
+    -webkit-transform: translate(-135%, -30%);
+    width:240px;
+    margin-top:5px;
+    -moz-transform: translate(-135%, -30%);
+    -ms-transform: translate(-135%, -30%);
+    -o-transform: translate(-135%, -30%);
 }
 /*End Banner Section*/
-/*Start Donate Today Section*/
+/*Start Donate Today Main Section*/
+main{
+   
+    width:100%;
+    height:2111.8110236px;
+}
 .donate-today{
     margin:20px auto;
+      
+    text-align: center;
 }
-.dn-btn{
-    margin:5px 340px;
-    padding:5px 10px;
-    color: white;
-}
-.donate-tk h2{
+
+.donate-today h2{
     padding:10px 140px;
     text-align: center;
-    font-size: 20px;
-    font-weight: 40px;
+    font-size: 60px;
+    font-weight: 50px;/*etar effect ta ki?*/
 }
-.donate-tk p{
+.donate-today p .description{
     padding:10px 140px;
     text-align: center;
     font-size: 15px;
 }
-.donate-today ul{
+.donate-today table{
     list-style:none;
-    margin:10px 1000px; 
-    background-color: #f6f620;  
-}
-.donate-today ul li{
-    display:inline;
-    margin:80px
+    margin:20px auto;
     
-   
 }
+.donate-today table tr{
+    display:inline;
+    border: 0px;
+     
+}
+table td{
+    padding:10px;
+       
+}
+.color-border{
+    border:1px solid black;
+    color: #d5c4c1;
+}
+.donate-today p{
+    padding:5px 0;
+}
+hr{/*webpage full view te anle dekha jai middle e ache but small view te anle dekha jai na?*/
+    margin:15px 545px;
+}
+button .dn-btn{ /*position aro left side e ante pari na*/
+    margin:20px 49px;
+    padding:15px 0;
+    color: #c40909;
+}/*sodhu class ke call kora ar oi class ta je tag er moddhe ache se tag + class soho call korar moddhe ki difference ache?*/
 /*End Donate Today Section*/
 /*Start plan section*/
+
 .plan{
     margin:20px auto;
+   
+}
+.plan-title{
+    text-align: center;
+    padding: 20px 0;/*ekhane margin use korle kaj kore na keno*/
 }
 .plan-title-description{
     text-align: center;
-    width: auto;
+    padding:10px 0;
+    font-size: 20px;   
 }
 
-.plan h2{
-    text-align: center;
-}
 .plans-container{
     display: flex;  
-    margin:10px 1000px; 
-    background-color: #14ed8f;
-    gap:10px;  
+    margin:10px 400px; 
+    
+    gap:10px; 
+    text-align: left;
+    padding-bottom: 10px; 
 }
 
 .plan-options1{
-    background-color: aqua;
-    width: 356.67px;
+    
+    width: 700px;
     height: 230px;
+    text-align: left;
 }
 .plan-options2{
-    background-color: #e39149;
-    width: 356.67px;
+   
+    width: 700px;
     height: 230px;
 }
 .plan-options3{
-    background-color: #f6f620;
-    width: 356.67px;
+    
+    width: 700px;
     height: 230px;
 }
 .plan-options1 img{
@@ -110,14 +160,14 @@ header img{
 .plan-options3 img{
     padding:20px 5px;
 }
-.plan-options1 .plan-title{
-    padding:10px 5px;
+.plan-options1 .plan-title h3{ /*title gula left align hoy na*/
+    padding:10px 0px;
 }
-.plan-options2 .plan-title{
-    padding:10px 5px;
+.plan-options2 .plan-title h3{
+    padding:10px 0px;
 }
-.plan-options3 .plan-title{
-    padding:10px 5px;
+.plan-options3 .plan-title h3{
+    padding:10px 0px;
 }
 
 .plan-options1 .plan-description{
@@ -140,25 +190,30 @@ header img{
 /*Start lives section*/
 .lives{
     margin:20px auto;
+    
 }
 .lives-container{
-    background-color: #e39149;
+    
     display: flex;
-    gap:10px;
-    margin:10px 1000px;
+    gap:50px;
     align-items: center;
-}
+    width: 1220px;
+    margin:20px auto;
+}    
 .lives-text{
     margin:30px 10px;
-    background-color: #19e590;
+    
+    padding:40px 0;
 }
 .lives-text h2{
     font-size: 35px;
     margin:10px 0;
+    padding:20px 0;
 }
 .lives-text p{
     font-size: 15px;
     margin:10px 0;
+    padding:10px 0;
 }
 .cont-btn{
     margin:5px 0;
@@ -173,12 +228,14 @@ header img{
 
 .lives1{
     margin:20px auto;
+    
 }
 .lives-container1{
-    background-color: #e39149;
+   
     display: flex;
     gap:10px;
-    margin:10px 1000px;
+    width: 1220px;
+    margin:20px auto;
     align-items: center;
 }
 .lives-pic1 img{
@@ -207,48 +264,65 @@ header img{
 /*End lives section*/
 /*Start updates section*/
 .updates{
-    background-color: #e39149;
-   
+    margin:20px auto;
     
 }
-.updates p{
-    margin: 10px 990px;
-    background-color: aliceblue;
+.updates h1{
+    
     height: 70px;
+    width:1220px;
+    font-size: 60px;
+    text-align: center;
+    margin: 20px 400px;
+    padding-top:40px;
+}
+.updates p{
+    margin: 20px 400px;
+   
+    width:1220px;
     font-size: 30px;
     text-align: center;
 }
-.updates h1{
-    margin: 10px 990px;
-    background-color: #cedeec;
+
+.subscribe{
+    
+   
     height: 70px;
+    width:1220px;
     font-size: 60px;
     text-align: center;
-}
-.subscribe{
-    margin: 10px 990px;
-    background-color: #edebe9;
-    align-items: center;
+    margin: 20px 400px;
+    padding-top:40px;
+    padding-bottom: 205px;
+
 
 }
 .subscribe ul{
-    margin: 5px 485px;
-    background-color: #cedeec;
-    height: 180px;
-    text-align: center;
+   
     list-style: none;
-    padding-top:160px
+    padding:8% 10%;
+    
     
 }
 .subscribe ul li{
     display: inline;
     font-size: 20px;  
 }
+.subscribe ul li input{ /*input are subscribe button tar moddokar gap nai but dite parchi na*/
+    padding: 5px; 
+    margin:0 0; 
+}
+.sub-btn{
+    background-color: #c12506;
+    padding: 5px;
+    margin:0 0;
+}
 
 /*End updates section*/
 /*Start footer */
 footer{
     background-color: black;
+    margin-top: 50px;
 }
 footer h2{
     font-size: 140px;
